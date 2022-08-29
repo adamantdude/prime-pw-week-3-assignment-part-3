@@ -32,7 +32,7 @@ console.log('6. Showing supplyChanges...');
 for(let i=0; i<supplyChanges.length; ++i) {
     if(supplyChanges[i] > 0) console.log('Added ' + supplyChanges[i] + ' parts');
     if(supplyChanges[i] === 0) console.log('No change.');
-    if(supplyChanges[i] < 0) console.log('Removed ' + supplyChanges[i] + ' parts');
+    if(supplyChanges[i] < 0) console.log('Removed ' + (supplyChanges[i]*-1) + ' parts');
 }
 
 // STRETCH GOALS
@@ -42,7 +42,7 @@ console.log('7. Showing supplyChanges with "for of" loop');
 for(const change of supplyChanges) {
     if(change > 0) console.log('Added ' + change + ' parts');
     if(change === 0) console.log('No change.');
-    if(change < 0) console.log('Removed ' + change + ' parts');
+    if(change < 0) console.log('Removed ' + (change*-1) + ' parts');
 }
 
 // 8. Write a loop to determine the total number of parts available by
