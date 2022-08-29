@@ -64,10 +64,10 @@ let boxes = 0;
 let totalParts = 572;
 /*
 boxes = Math.floor(totalParts / 7);
-let leftoverParts = totalParts % 7;
+let totalParts = totalParts % 7;
 */
 while(totalParts > 7) {
     totalParts -= 7;
     ++boxes;
 }
-console.log(boxes + ' boxes were filled. ' + totalParts /* leftoverParts */ + ' parts are left over.');
+console.log(boxes + ' boxes were filled. ' + totalParts + ' parts are left over.');
