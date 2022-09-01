@@ -66,7 +66,7 @@ let totalParts = 572;
 boxes = Math.floor(totalParts / 7);
 let totalParts = totalParts % 7;
 */
-while(totalParts > 7) {
+while(totalParts >= 7) {
     totalParts -= 7;
     ++boxes;
 }
